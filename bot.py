@@ -16,8 +16,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
-    await client.change_presence(activity=discord.Game('L'))
-    await client.change_presence(status=discord.Status.invisible, activity=activity)
+    await client.change_presence(status=discord.Status.invisible, activity=discord.Game('L'))
 
 
 @client.event
