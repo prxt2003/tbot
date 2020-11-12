@@ -14,7 +14,7 @@ async def on_member_join(member):
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
-    await client.change_presence(activity=discord.Activity('L'))
+    await client.change_presence(activity=discord.Game('L'))
 
 
 @client.event
