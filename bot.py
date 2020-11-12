@@ -1,8 +1,5 @@
-from asyncio.tasks import wait_for
 import discord
 import os
-
-from discord import activity
 
 client = discord.Client()
 
