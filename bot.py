@@ -1,7 +1,7 @@
 from asyncio.tasks import wait_for
 import discord
+import os
 
-token = 'NzY3MjkxNzgzNTE5NTM1MTA1.X4vyKA.k7CLqvza1Yh-zUCvRhrzGhVXt9s'
 client = discord.Client()
 
 
@@ -50,4 +50,4 @@ async def on_message(message):
         await message.channel.send('<@!445879318388670464> L')
 
 
-client.run(token)
+client.run(os.environ('TOKEN'))
