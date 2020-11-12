@@ -5,10 +5,10 @@ import os
 client = discord.Client()
 
 
-@client.event
-async def on_member_join(member):
-    await member.create_dm()
-    await member.dm_channel.send(f'Hi {member.name}, in this server, I take executive decisions')
+# @client.event
+# async def on_member_join(member):
+#     await member.create_dm()
+#     await member.dm_channel.send(f'Hi {member.name}, in this server, I take executive decisions')
 
 
 @client.event
