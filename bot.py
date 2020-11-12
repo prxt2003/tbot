@@ -50,4 +50,4 @@ async def on_message(message):
         await message.channel.send('<@!445879318388670464> L')
 
 
-client.run(os.environ('TOKEN'))
+client.run(os.environ['TOKEN'])
