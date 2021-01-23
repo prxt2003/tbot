@@ -45,9 +45,9 @@ async def on_message(message):
     # elif message.author.name in ['Stryker101', 'Madhav Lodha']:
     #     await message.channel.send('Stop eating fatass')
 
-    # if message.author.name == 'Madhav Lodha':
-    #     # await message.delete()
-    #     await message.channel.send('<@!445879318388670464> L')
+    if message.author.name == 'Madhav':
+        await message.delete()
+        await message.channel.send('<@!445879318388670464> L')
 
 
 client.run(os.environ['TOKEN'])
