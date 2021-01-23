@@ -49,5 +49,8 @@ async def on_message(message):
         await message.delete()
         await message.channel.send('<@!445879318388670464> L')
 
+    if 'parts' in message.content.lower():
+        await message.channel.send('We need new BALL BEARINGS')
+
 
 client.run(os.environ['TOKEN'])
