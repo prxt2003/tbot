@@ -52,5 +52,8 @@ async def on_message(message):
     if 'parts' in message.content.lower():
         await message.channel.send('We need new BALL BEARINGS')
 
+    if 'smooth' in message.content.lower():
+        await message.channel.send('We need more LUUUUUUUBE')
+
 
 client.run(os.environ['TOKEN'])
